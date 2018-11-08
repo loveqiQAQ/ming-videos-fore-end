@@ -1,13 +1,14 @@
 {
   "pages": [
+    "pages/login/login",
     "pages/regist/regist",
     "pages/index/index"
-    
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "小ming短视频",
     "navigationBarTextStyle": "black"
-  }
+  },
+  "debug": true
 }
