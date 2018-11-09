@@ -54,6 +54,10 @@ console.info(res)
             })
 
             app.userInfo = res.data.data
+
+            wx.redirectTo({
+              url: '../mine/mine'
+            })
           } else if(res.data.status == 500) {
             wx.showToast({
               title: res.data.msg,
@@ -70,7 +74,7 @@ console.info(res)
    * 跳转到注册页面
    */
   goRegistPage() {
-    wx.navigateTo({
+    wx.redirectTo({
       url: '../regist/regist'
     })
   }
